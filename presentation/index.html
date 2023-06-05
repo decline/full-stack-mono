@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Full Stack Monorepo Development with Nx</title>
+
+    <link rel="stylesheet" href="../node_modules/reveal.js/dist/reset.css" />
+    <link rel="stylesheet" href="../node_modules/reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="../node_modules/reveal.js/dist/theme/dracula.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="../node_modules/reveal.js/plugin/highlight/monokai.css" />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Full Stack Monorepo Development with Nx</h2>
+          <p>Dominik Huppmann</p>
+        </section>
+        <section>
+          <h3>Polyrepo vs Monorepo</h3>
+          <div style="display: inline-flex">
+            <img alt="Polyrepo" src="img/polyrepo.svg" width="490" class="fragment fade-up" />
+            <img alt="Monorepo" src="img/monorepo.svg" width="490" class="fragment fade-up" />
+          </div>
+          <p class="fragment fade-up">Source: <a href="https://monorepo.tools">https://monorepo.tools</a></p>
+        </section>
+        <section>
+          <h3>Benefits of Monorepo over Polyrepo</h3>
+          <div style="display: flex; justify-content: space-evenly">
+            <div style="width: 50%">
+              <h4>Polyrepo</h4>
+              <ul>
+                <li class="fragment fade-up">Cumbersome code sharing</li>
+                <li class="fragment fade-up">Significant code duplication</li>
+                <li class="fragment fade-up">Costly cross-repo changes to shared libraries and consumers</li>
+                <li class="fragment fade-up">Inconsistent tooling</li>
+              </ul>
+            </div>
+            <div style="width: 50%">
+              <h4>Monorepo</h4>
+              <ul>
+                <li class="fragment fade-up">No overhead to create new projects</li>
+                <li class="fragment fade-up">Atomic commits across projects</li>
+                <li class="fragment fade-up">One version of everything</li>
+                <li class="fragment fade-up">Developer mobility</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>Everything is great, right?</h3>
+          <img alt="this is fine" src="img/fine.gif" class="fragment fade-in" />
+        </section>
+        <section>
+          <h3>Managing things</h3>
+          <ul>
+            <li class="fragment fade-up">Modular approach</li>
+            <li class="fragment fade-up">Boundaries</li>
+            <li class="fragment fade-up">Detecting affected projects</li>
+            <li class="fragment fade-up">Computation caching</li>
+            <li class="fragment fade-up">Code sharing</li>
+            <li class="fragment fade-up">Code generation</li>
+          </ul>
+        </section>
+        <section>
+          <img alt="Nx" src="img/nx.svg" width="400" /><br />
+          <div class="fragment fade-up">
+            <cite style="font-style: italic; font-size: 2rem"
+              >"Nx is a powerful open-source build system that provides tools and techniques for enhancing developer
+              productivity, optimizing CI performance, and maintaining code quality."
+            </cite>
+            <p style="text-align: right">nx.dev</p>
+          </div>
+        </section>
+        <section>
+          <h3>Resources:</h3>
+          <img alt="qr-code" src="img/qr.svg" width="360" />
+          <ul>
+            <li>
+              GitHub:
+              <a href="https://github.com/decline/full-stack-mono">https://github.com/decline/full-stack-mono</a>
+            </li>
+            <li>Nx: <a href="https://nx.dev">https://nx.dev</a></li>
+            <li>Monorepo: <a href="https://monorepo.tools">https://monorepo.tools</a></li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+    <script src="../node_modules/reveal.js/dist/reveal.js"></script>
+    <script src="../node_modules/reveal.js/plugin/notes/notes.js"></script>
+    <script src="../node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+    <script src="../node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
