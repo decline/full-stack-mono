@@ -45,6 +45,12 @@ nx g @nx/nest:library --name=concert/api --strict --tags=scope:concert,type:api
 nx g @nx/js:library --name=concert/shared --strict --tags=scope:concert,type:shared --unitTestRunner=jest --bundler=none
 ```
 
+## Add tailwind
+
+```shell
+npx nx g @nx/angular:setup-tailwind musx
+```
+
 ## Create some services, controllers, etc.
 
 ```shell
