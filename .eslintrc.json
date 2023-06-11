@@ -12,10 +12,29 @@
             "enforceBuildableLibDependency": true,
             "allow": [],
             "depConstraints": [
+              { "sourceTag": "type:e2e", "onlyDependOnLibsWithTags": ["type:app"] },
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
-              }
+                "sourceTag": "type:app",
+                "onlyDependOnLibsWithTags": ["type:feature", "type:data-access", "type:ui", "type:utility", "type:api"]
+              },
+              {
+                "sourceTag": "type:feature",
+                "onlyDependOnLibsWithTags": [
+                  "type:feature",
+                  "type:data-access",
+                  "type:ui",
+                  "type:utility",
+                  "type:shared"
+                ]
+              },
+              {
+                "sourceTag": "type:data-access",
+                "onlyDependOnLibsWithTags": ["type:data-access", "type:utility", "type:shared"]
+              },
+              { "sourceTag": "type:ui", "onlyDependOnLibsWithTags": ["type:ui", "type:utility"] },
+              { "sourceTag": "type:utility", "onlyDependOnLibsWithTags": ["type:utility"] },
+              { "sourceTag": "type:api", "onlyDependOnLibsWithTags": ["type:api", "type:shared"] },
+              { "sourceTag": "type:shared", "onlyDependOnLibsWithTags": ["type:shared"] }
             ]
           }
         ]

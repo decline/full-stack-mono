@@ -30,7 +30,7 @@ You can append the `--dry-run` flag to test your commands first without creating
 
 ```shell
 # api app
-nx g @nx/nest:application --name=musx-api --frontendProject=musx  --strict --tags=scope:app
+nx g @nx/nest:application --name=musx-api --frontendProject=musx  --strict --tags=type:app
 # feature library
 nx g @nx/angular:library --name=concert/feature --standalone --prefix=fsm --strict --style=scss --tags=scope:concert,type:feature --routing
 # data-access library
