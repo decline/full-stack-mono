@@ -1,1 +1,1 @@
-export * from './lib/concert-shared';
+export { Concert } from './lib/interfaces/concert.interface';

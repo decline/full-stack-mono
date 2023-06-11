@@ -1,11 +1,15 @@
-import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { DatePipe } from '@angular/common';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'fsm-concert-ui',
   standalone: true,
-  imports: [CommonModule],
+  imports: [DatePipe],
   templateUrl: './concert-ui.component.html',
   styleUrls: ['./concert-ui.component.scss'],
 })
-export class ConcertUiComponent {}
+export class ConcertUiComponent {
+  @Input() title?: string;
+  @Input() location?: string;
+  @Input() date!: string;
+}

@@ -4,5 +4,5 @@
 
 /* You can add global styles to this file, and also import other style files */
 body {
-  padding: 1rem;
+  @apply bg-slate-900 text-white p-4
 }

@@ -1,1 +1,10 @@
-<p>concert-feature works!</p>
+<button class="p-2 rounded-lg bg-slate-700" (click)="loadConcerts()">Load concerts</button>
+
+<div class="flex mt-4 gap-4">
+  <fsm-concert-ui
+    *ngFor="let concert of concerts$ | async"
+    [title]="concert.title"
+    [date]="concert.date"
+    [location]="concert.location"
+  ></fsm-concert-ui>
+</div>

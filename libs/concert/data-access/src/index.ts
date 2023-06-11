@@ -1,1 +1,1 @@
-export * from './lib/concert-data-access/concert-data-access.component';
+export { ConcertService } from './lib/services/concert.service';

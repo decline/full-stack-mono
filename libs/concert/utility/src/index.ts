@@ -1,1 +1,1 @@
-export * from './lib/concert-utility/concert-utility.component';
+export { sortDates } from './lib/sort.util';
