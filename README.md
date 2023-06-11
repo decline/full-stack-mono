@@ -19,6 +19,13 @@ nx g @nx/angular:library --help
 
 ## Create a set of apps and libraries
 
+Let's install some dependencies first:
+
+```shell
+pnpm add -D @nx/nest
+
+```
+
 You can append the `--dry-run` flag to test your commands first without creating any files
 
 ```shell
@@ -33,9 +40,9 @@ nx g @nx/angular:library --name=concert/ui --standalone --prefix=frm --strict --
 # utility library
 nx g @nx/angular:library --name=concert/utility --standalone --prefix=frm --strict --style=scss --tags=scope:concert,type:utility
 # api library
-nx g @nx/nest:library --name=concert-api --strict --tags=scope:concert,type:api
+nx g @nx/nest:library --name=concert/api --strict --tags=scope:concert,type:api
 # shared library
-nx g @nx/js:library --name=concert-shared --strict --tags=scope:concert,type:shared --unitTestRunner=jest --bundler=none
+nx g @nx/js:library --name=concert/shared --strict --tags=scope:concert,type:shared --unitTestRunner=jest --bundler=none
 ```
 
 ## Create some services, controllers, etc.

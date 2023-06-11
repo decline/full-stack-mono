@@ -14,7 +14,14 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@full-stack-mono/concert/api": ["libs/concert/api/src/index.ts"],
+      "@full-stack-mono/concert/data-access": ["libs/concert/data-access/src/index.ts"],
+      "@full-stack-mono/concert/feature": ["libs/concert/feature/src/index.ts"],
+      "@full-stack-mono/concert/shared": ["libs/concert/shared/src/index.ts"],
+      "@full-stack-mono/concert/ui": ["libs/concert/ui/src/index.ts"],
+      "@full-stack-mono/concert/utility": ["libs/concert/utility/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
