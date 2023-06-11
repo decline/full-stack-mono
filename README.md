@@ -66,3 +66,14 @@ npx nx g @nx/angular:setup-tailwind musx
 ```shell
 nx run-many -t serve -p musx,musx-api
 ```
+
+## Generators
+
+```shell
+# install @nx/plugin
+pnpm add @nx/plugin
+# create a plugin
+nx g @nx/plugin:plugin
+# create a generator
+nx g @nx/plugin:generator
+```
