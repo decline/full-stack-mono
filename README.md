@@ -25,7 +25,7 @@ Let's install some dependencies first:
 pnpm add -D @nx/nest
 ```
 
-You can append the `--dry-run` flag to test your commands first without creating any files
+You can also omit the flags, the Nx CLI will then ask you for the necessary values. You can append the `--dry-run` flag to test your commands first without creating any files. There are also IDE integrations for the CLI.
 
 ```shell
 # api app
@@ -51,6 +51,8 @@ nx g @nx/js:library --name=concert/shared --strict --tags=scope:concert,type:sha
 nx g @nx/angular:service --project=concert-data-access --name=services/concert
 # controller
 nx g  @nx/nest:controller --project=concert-api --directory=lib --name=concert
+# interface
+nx g @schematics/angular:interface --project=concert-shared --name=interfaces/concert --type=interface
 ```
 
 ## Add tailwind

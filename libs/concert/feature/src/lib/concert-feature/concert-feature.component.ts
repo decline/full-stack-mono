@@ -13,7 +13,6 @@ import { ConcertUiComponent } from '@full-stack-mono/concert/ui';
 export class ConcertFeatureComponent {
   private readonly concertService = inject(ConcertService);
 
-  foo = [];
   concerts$ = this.concertService.concerts$;
 
   loadConcerts() {
