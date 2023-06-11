@@ -2,7 +2,7 @@
   "name": "concert-utility",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/concert/utility/src",
-  "prefix": "frm",
+  "prefix": "fsm",
   "tags": ["scope:concert", "type:utility"],
   "projectType": "library",
   "targets": {

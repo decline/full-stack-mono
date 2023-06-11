@@ -2,7 +2,7 @@
   "name": "concert-feature",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/concert/feature/src",
-  "prefix": "frm",
+  "prefix": "fsm",
   "tags": ["scope:concert", "type:feature"],
   "projectType": "library",
   "targets": {

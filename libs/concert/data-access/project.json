@@ -2,7 +2,7 @@
   "name": "concert-data-access",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/concert/data-access/src",
-  "prefix": "frm",
+  "prefix": "fsm",
   "tags": ["scope:concert", "type:data-access"],
   "projectType": "library",
   "targets": {

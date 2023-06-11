@@ -32,13 +32,13 @@ You can append the `--dry-run` flag to test your commands first without creating
 # api app
 nx g @nx/nest:application --name=musx-api --frontendProject=musx  --strict --tags=scope:app
 # feature library
-nx g @nx/angular:library --name=concert/feature --standalone --prefix=frm --strict --style=scss --tags=scope:concert,type:feature --routing
+nx g @nx/angular:library --name=concert/feature --standalone --prefix=fsm --strict --style=scss --tags=scope:concert,type:feature --routing
 # data-access library
-nx g @nx/angular:library --name=concert/data-access --standalone --prefix=frm --strict --style=scss --tags=scope:concert,type:data-access
+nx g @nx/angular:library --name=concert/data-access --standalone --prefix=fsm --strict --style=scss --tags=scope:concert,type:data-access
 # ui library
-nx g @nx/angular:library --name=concert/ui --standalone --prefix=frm --strict --style=scss --tags=scope:concert,type:ui
+nx g @nx/angular:library --name=concert/ui --standalone --prefix=fsm --strict --style=scss --tags=scope:concert,type:ui
 # utility library
-nx g @nx/angular:library --name=concert/utility --standalone --prefix=frm --strict --style=scss --tags=scope:concert,type:utility
+nx g @nx/angular:library --name=concert/utility --standalone --prefix=fsm --strict --style=scss --tags=scope:concert,type:utility
 # api library
 nx g @nx/nest:library --name=concert/api --strict --tags=scope:concert,type:api
 # shared library

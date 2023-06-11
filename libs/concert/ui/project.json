@@ -2,7 +2,7 @@
   "name": "concert-ui",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/concert/ui/src",
-  "prefix": "frm",
+  "prefix": "fsm",
   "tags": ["scope:concert", "type:ui"],
   "projectType": "library",
   "targets": {

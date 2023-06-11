@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'frm-concert-feature',
+  selector: 'fsm-concert-feature',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './concert-feature.component.html',
