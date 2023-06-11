@@ -23,7 +23,6 @@ Let's install some dependencies first:
 
 ```shell
 pnpm add -D @nx/nest
-
 ```
 
 You can append the `--dry-run` flag to test your commands first without creating any files
