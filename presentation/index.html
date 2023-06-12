@@ -80,8 +80,60 @@
           </div>
         </section>
         <section>
-          <h2>Boundaries</h2>
+          <h3>Types & Scopes</h3>
+          <div style="display: flex; justify-content: space-evenly">
+            <div style="width: 50%">
+              <h4 class="fragment fade-up">Types</h4>
+              <ul>
+                <li class="fragment fade-up">
+                  <span class="highlight">utility</span>
+                  <span class="lowlight">(low-level utils, used by many libs and apps)</span>
+                </li>
+                <li class="fragment fade-up">
+                  <span class="highlight">ui</span> <span class="lowlight">(dumb, representational components)</span>
+                </li>
+                <li class="fragment fade-up">
+                  <span class="highlight">data-access</span>
+                  <span class="lowlight">(api-integration, state-management)</span>
+                </li>
+                <li class="fragment fade-up">
+                  <span class="highlight">feature</span>
+                  <span class="lowlight">(smart components, business logic, routing)</span>
+                </li>
+              </ul>
+            </div>
+            <div style="width: 50%">
+              <h4 class="fragment fade-up">Scopes</h4>
+              <ul class="fragment fade-up">
+                <li><span class="highlight">concert</span></li>
+                <li><span class="highlight">payment</span></li>
+                <li><span class="lowlight">...</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>Module boundaries</h3>
           <img alt="Boundaries" src="img/boundaries.jpg" width="600" />
+        </section>
+        <section>
+          <h3>Affected / Caching</h3>
+          <div style="display: inline-flex">
+            <img class="fragment fade-up" alt="Affected" src="img/affected.svg" />
+            <img class="fragment fade-up" alt="Affected" src="img/affected2.svg" />
+          </div>
+          <p class="fragment fade-up">Source: <a href="https://nx.dev/">https://nx.dev/</a></p>
+        </section>
+        <section>
+          <h3>Bonus</h3>
+          <ul>
+            <li class="fragment fade-up">Parallelization</li>
+            <li class="fragment fade-up">Composable generators</li>
+            <li class="fragment fade-up">Depends-on handling</li>
+            <li class="fragment fade-up">generatePackageJson</li>
+            <li class="fragment fade-up">Storybook support</li>
+            <li class="fragment fade-up">Nx cloud</li>
+          </ul>
         </section>
         <section>
           <h3>Resources:</h3>

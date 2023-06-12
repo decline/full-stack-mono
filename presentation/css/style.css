@@ -1,3 +1,11 @@
 ul > li {
   font-size: 2rem;
 }
+
+.highlight {
+  color: var(--r-link-color)
+}
+
+.lowlight {
+  color: rgba(255,255,255,0.5);
+}
