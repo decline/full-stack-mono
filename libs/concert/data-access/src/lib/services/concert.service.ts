@@ -14,7 +14,7 @@ export class ConcertService {
 
   loadConcerts() {
     this.http
-      .get<Concert[]>('http://localhost:3000/api/concert/all')
+      .get<Concert[]>('/api/concert/all')
       .pipe(
         tap(concerts => {
           concerts = concerts.sort(sortDates);
