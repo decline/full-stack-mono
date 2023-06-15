@@ -44,6 +44,12 @@ nx g @nx/nest:library --name=concert/api --strict --tags=scope:concert,type:api
 nx g @nx/js:library --name=concert/shared --strict --tags=scope:concert,type:shared --unitTestRunner=jest --bundler=none
 ```
 
+## Visualize our workspace
+
+```shell
+nx graph --watch
+```
+
 ## Create some services, controllers, etc.
 
 ```shell
